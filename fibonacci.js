@@ -1,3 +1,4 @@
+// using iteration
 function fibs (n) {
   if (n === 0) return [];
   else if (n === 1) return [0];
@@ -15,6 +16,7 @@ function fibs (n) {
   }
 }
 
+// using recursion
 function fibsRec (n) {
   if (n === 0) return [];
   else if (n === 1) return [0];
@@ -26,7 +28,7 @@ function fibsRec (n) {
   }
 }
 
-console.log(fibs(0), fibsRec(0));
-console.log(fibs(1), fibsRec(1));
-console.log(fibs(2), fibsRec(2));
-console.log(fibs(8), fibsRec(8));
+console.log(fibs(0), fibsRec(0)); // []
+console.log(fibs(1), fibsRec(1)); // [ 0 ]
+console.log(fibs(2), fibsRec(2)); // [ 0, 1 ]
+console.log(fibs(8), fibsRec(8)); // [ 0, 1, 1, 2, 3, 5, 8, 13 ]
